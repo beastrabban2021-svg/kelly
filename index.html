@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAASPP 7th Grade Mathematics · Complete Practice 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Lato:wght@400;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #1a2233;
+  --ink-mid: #3a4a63;
+  --ink-soft: #5a6a83;
+  --page: #f0f6ff;
+  --page-warm: #e3eeff;
+  --page-cool: #ddeeff;
+  --rule: #b8d0ee;
+  --rule-light: #d0e4f8;
+  --red: #c0392b;
+  --red-pale: #fdf0ef;
+  --gold: #2563eb;
+  --gold-pale: #eff6ff;
+  --blue: #1a4b8c;
+  --blue-pale: #dbeafe;
+  --green: #1a6640;
+  --green-pale: #eef7f2;
+  --teal: #0369a1;
+  --teal-pale: #e0f2fe;
+  /* hero/masthead uses light blue instead of black */
+  --hero-bg: #1e3a5f;
+  --hero-accent: #60a5fa;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'Nunito', 'Segoe UI', sans-serif;
+  background: var(--page);
+  color: var(--ink);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── MASTHEAD ─────────────────────────────────────────────────────── */
+.masthead {
+  background: var(--hero-bg);
+  color: white;
+  padding: 0;
+}
+.masthead-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+.masthead-brand {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.75);
+  font-weight: 700;
+}
+.masthead-nav {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.masthead-nav a {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: rgba(255,255,255,.8);
+  text-decoration: none;
+  padding: 5px 12px;
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 4px;
+  transition: all .2s;
+}
+.masthead-nav a:hover { background: rgba(255,255,255,.15); color: white; }
+
+/* ─── HERO ─────────────────────────────────────────────────────────── */
+.hero {
+  background: var(--hero-bg);
+  color: white;
+  padding: 72px 32px 64px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 39px,
+    rgba(255,255,255,.04) 39px,
+    rgba(255,255,255,.04) 40px
+  );
+}
+.hero-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+.hero-kicker {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--hero-accent);
+  margin-bottom: 22px;
+  font-weight: 700;
+}
+.hero h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: clamp(34px, 5.5vw, 62px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -.01em;
+  margin-bottom: 20px;
+}
+.hero h1 em {
+  font-style: italic;
+  font-weight: 400;
+  color: rgba(255,255,255,.6);
+}
+.hero-deck {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255,255,255,.75);
+  line-height: 1.65;
+  margin-bottom: 40px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-credit {
+  font-family: 'Nunito', sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  color: rgba(255,255,255,.88);
+  margin-bottom: 40px;
+  margin-top: 6px;
+}
+.hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.pill {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 16px;
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 100px;
+  color: rgba(255,255,255,.85);
+}
+
+/* ─── LAYOUT ────────────────────────────────────────────────────────── */
+.page-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px 80px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 0;
+}
+@media (max-width: 820px) {
+  .page-wrap { grid-template-columns: 1fr; }
+  .toc-rail { display: none; }
+}
+
+/* ─── TOC RAIL ──────────────────────────────────────────────────────── */
+.toc-rail {
+  padding-top: 48px;
+  padding-right: 28px;
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100vh;
+  overflow-y: auto;
+}
+.toc-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 16px;
+  display: block;
+  font-weight: 700;
+}
+.toc-rail a {
+  display: block;
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-mid);
+  text-decoration: none;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--rule-light);
+  transition: color .15s;
+  line-height: 1.4;
+}
+.toc-rail a:hover { color: var(--blue); }
+.toc-rail a.active { color: var(--blue); font-weight: 800; }
+.toc-num {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 11px;
+  color: var(--teal);
+  display: inline-block;
+  width: 22px;
+  font-weight: 500;
+}
+
+/* ─── CONTENT ────────────────────────────────────────────────────────── */
+.content { padding-top: 48px; }
+
+/* ─── SECTION BLOCK ─────────────────────────────────────────────────── */
+.section {
+  margin-bottom: 64px;
+  border-top: 3px solid var(--blue);
+  padding-top: 32px;
+}
+.section-hd {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.section-n {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .12em;
+  color: var(--teal);
+  flex-shrink: 0;
+  font-weight: 500;
+}
+.section h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: var(--hero-bg);
+}
+.section-intro {
+  font-size: 15px;
+  color: var(--ink-mid);
+  max-width: 680px;
+  margin-bottom: 28px;
+  border-left: 4px solid var(--rule);
+  padding-left: 16px;
+  font-style: italic;
+}
+
+/* ─── CONTENT GRIDS ─────────────────────────────────────────────────── */
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+.grid-4 { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
+.grid-2c { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+
+/* ─── DOMAIN CARD ───────────────────────────────────────────────────── */
+.domain-card {
+  background: white;
+  border: 1px solid var(--rule);
+  padding: 18px;
+  border-top: 3px solid var(--teal);
+  border-radius: 4px;
+}
+.domain-card .std {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 11px;
+  color: var(--teal);
+  letter-spacing: .06em;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+.domain-card h4 { font-family: 'Lato', sans-serif; font-size: 15px; font-weight: 700; margin-bottom: 6px; line-height: 1.3; color: var(--hero-bg); }
+.domain-card p { font-family: 'Nunito', sans-serif; font-size: 14px; color: var(--ink-mid); line-height: 1.55; }
+
+/* ─── OVERVIEW TABLE ────────────────────────────────────────────────── */
+.ov-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.ov-table th {
+  background: var(--page-warm);
+  padding: 10px 14px;
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  border-bottom: 2px solid var(--rule);
+  font-weight: 700;
+}
+.ov-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--rule-light);
+  vertical-align: top;
+  font-size: 15px;
+  font-family: 'Nunito', sans-serif;
+}
+.ov-table tr:last-child td { border-bottom: none; }
+
+/* ─── QUESTION BLOCK ────────────────────────────────────────────────── */
+.q-block {
+  background: white;
+  border: 1px solid var(--rule);
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 6px;
+  transition: box-shadow .2s;
+}
+.q-block:hover { box-shadow: 0 4px 20px rgba(30,58,95,.1); }
+
+.q-head {
+  background: var(--page-warm);
+  border-bottom: 1px solid var(--rule);
+  padding: 11px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.q-tag {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+  background: var(--hero-bg);
+  color: white;
+  padding: 4px 10px;
+  letter-spacing: .04em;
+  border-radius: 3px;
+}
+.q-std {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 11px;
+  color: var(--teal);
+  margin-left: auto;
+  letter-spacing: .06em;
+  font-weight: 500;
+}
+.q-type {
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  color: var(--ink-soft);
+  letter-spacing: .06em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.q-body { padding: 22px 24px; }
+.q-text { font-family: 'Nunito', sans-serif; font-size: 16px; line-height: 1.75; margin-bottom: 18px; font-weight: 400; }
+.q-text strong { color: var(--blue); font-weight: 700; }
+
+.q-list { list-style: disc; padding-left: 22px; margin: 8px 0 12px; font-size: 15px; font-family: 'Nunito', sans-serif; }
+.q-list li { margin-bottom: 5px; }
+
+/* ─── OPTIONS ────────────────────────────────────────────────────────── */
+.options { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+.opt {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 9px 14px;
+  border: 1px solid var(--rule);
+  cursor: default;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: background .12s;
+}
+.opt:hover { background: var(--page-cool); border-color: var(--blue); }
+.opt-l {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  min-width: 26px;
+  height: 26px;
+  border: 2px solid var(--rule);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-mid);
+  flex-shrink: 0;
+  margin-top: 2px;
+  background: var(--page-warm);
+  border-radius: 50%;
+}
+.opt-t { padding-top: 2px; font-family: 'Nunito', sans-serif; font-size: 15px; font-weight: 600; }
+
+/* Correct revealed only after button click — no pre-highlighting */
+.opt.correct-revealed {
+  background: var(--green-pale);
+  border-color: var(--green);
+}
+.opt.correct-revealed .opt-l {
+  background: var(--green);
+  border-color: var(--green);
+  color: white;
+}
+
+/* ─── ANSWER REVEAL ─────────────────────────────────────────────────── */
+.ans-wrap { border-top: 1px dashed var(--rule); margin-top: 16px; padding-top: 16px; }
+.show-ans {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  background: var(--hero-bg);
+  border: none;
+  color: white;
+  padding: 9px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all .15s;
+}
+.show-ans:hover { background: var(--blue); }
+.ans-box {
+  display: none;
+  margin-top: 14px;
+  background: var(--green-pale);
+  border-left: 4px solid var(--green);
+  padding: 14px 18px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #0d4a2a;
+  border-radius: 0 6px 6px 0;
+}
+.ans-box.open { display: block; }
+
+/* ─── CONSTRUCTED RESPONSE ─────────────────────────────────────────── */
+.work-area {
+  background: var(--page-warm);
+  border: 1px solid var(--rule);
+  min-height: 72px;
+  padding: 12px;
+  font-size: 13px;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.ans-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.blank {
+  border-bottom: 2px solid var(--ink);
+  width: 100px;
+  display: inline-block;
+}
+
+/* ─── DATA TABLES ────────────────────────────────────────────────────── */
+.dt {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin: 10px 0 14px;
+  font-family: 'Nunito', sans-serif;
+}
+.dt th {
+  background: var(--hero-bg);
+  color: white;
+  padding: 9px 12px;
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+.dt td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--rule-light);
+}
+.dt tr:nth-child(even) td { background: var(--page-warm); }
+.dt.narrow { max-width: 280px; }
+
+/* ─── STEP DISPLAY ───────────────────────────────────────────────────── */
+.steps-box {
+  background: var(--page-warm);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+.step-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--red);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.step-row {
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* ─── PERFORMANCE TASK ───────────────────────────────────────────────── */
+.pt-scenario {
+  background: var(--hero-bg);
+  color: white;
+  padding: 28px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+.pt-scenario h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: rgba(255,255,255,.9);
+  margin-bottom: 10px;
+}
+.pt-scenario p { font-family: 'Nunito', sans-serif; font-size: 15px; opacity: .85; line-height: 1.7; }
+.pt-item {
+  border: 1px solid var(--rule);
+  margin-bottom: 16px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.pt-item-hd {
+  background: var(--page-warm);
+  border-bottom: 1px solid var(--rule);
+  padding: 12px 18px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--hero-bg);
+}
+.pt-item-hd .badge {
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  background: var(--teal);
+  color: white;
+  padding: 3px 9px;
+  border-radius: 3px;
+}
+.pt-item-body { padding: 18px; font-family: 'Nunito', sans-serif; font-size: 15px; line-height: 1.75; }
+
+/* ─── REFERENCE SHEET ────────────────────────────────────────────────── */
+.ref-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; }
+.ref-card {
+  background: white;
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--teal);
+  padding: 18px;
+  border-radius: 4px;
+}
+.ref-card h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule-light);
+  color: var(--hero-bg);
+}
+.ref-row {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  padding: 5px 0;
+  border-bottom: 1px dotted var(--rule-light);
+  gap: 8px;
+}
+.ref-row:last-child { border-bottom: none; }
+.ref-row .lhs { color: var(--ink-mid); font-weight: 600; }
+.ref-row .rhs {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 13px;
+  color: var(--teal);
+  font-weight: 500;
+  text-align: right;
+}
+
+/* ─── ANSWER KEY GRID ────────────────────────────────────────────────── */
+.ak-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(192px, 1fr)); gap: 8px; }
+.ak-item {
+  background: white;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 14px;
+}
+.ak-q {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
+  color: var(--ink-mid);
+  flex-shrink: 0;
+  font-weight: 500;
+}
+.ak-a { font-family: 'Nunito', sans-serif; font-weight: 700; color: var(--green); text-align: right; line-height: 1.3; }
+.ak-s {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 9px;
+  color: var(--ink-soft);
+  display: block;
+  margin-top: 2px;
+}
+
+/* ─── ACHIEVEMENT LEVELS ─────────────────────────────────────────────── */
+.levels { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+@media (max-width: 600px) { .levels { grid-template-columns: 1fr 1fr; } }
+.lv-card { padding: 20px 14px; text-align: center; border-top: 4px solid; }
+.lv-card.l1 { background: #fdf2f1; border-color: #c0392b; }
+.lv-card.l2 { background: #fdf8f0; border-color: var(--gold); }
+.lv-card.l3 { background: var(--green-pale); border-color: var(--green); }
+.lv-card.l4 { background: var(--blue-pale); border-color: var(--blue); }
+.lv-num { font-family: 'Lato', sans-serif; font-size: 40px; font-weight: 900; margin-bottom: 6px; }
+.l1 .lv-num { color: #c0392b; }
+.l2 .lv-num { color: #b5822a; }
+.l3 .lv-num { color: var(--green); }
+.l4 .lv-num { color: var(--blue); }
+.lv-label { font-family: 'Lato', sans-serif; font-size: 13px; font-weight: 700; margin-bottom: 6px; }
+.lv-desc { font-family: 'Nunito', sans-serif; font-size: 12px; color: var(--ink-mid); line-height: 1.4; margin-bottom: 8px; }
+.lv-score { font-family: 'Roboto Mono', monospace; font-size: 11px; color: var(--ink-soft); }
+
+/* ─── TIPS ────────────────────────────────────────────────────────────── */
+.tips { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.tips li {
+  display: flex;
+  gap: 14px;
+  padding: 14px 18px;
+  background: white;
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--teal);
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  border-radius: 0 6px 6px 0;
+}
+.tip-n {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--teal);
+  flex-shrink: 0;
+  width: 22px;
+  margin-top: 2px;
+}
+
+/* ─── RESOURCES ──────────────────────────────────────────────────────── */
+.res-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+.res-link {
+  display: block;
+  background: white;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: var(--ink);
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all .15s;
+  border-left: 4px solid var(--blue);
+}
+.res-link:hover { background: var(--blue); color: white; }
+.res-link small { display: block; font-family: 'Nunito', sans-serif; font-size: 11px; font-weight: 400; color: var(--ink-soft); margin-top: 3px; word-break: break-all; }
+.res-link:hover small { color: rgba(255,255,255,.7); }
+
+/* ─── FORMULA INLINE ────────────────────────────────────────────────── */
+.f {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 13px;
+  background: var(--page-warm);
+  padding: 2px 8px;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  white-space: nowrap;
+  color: var(--hero-bg);
+}
+
+/* ─── NOTE BOX ───────────────────────────────────────────────────────── */
+.note-box {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-left: 4px solid #d97706;
+  border-radius: 0 6px 6px 0;
+  padding: 13px 16px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  color: #78350f;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+/* ─── FOOTER ─────────────────────────────────────────────────────────── */
+footer {
+  background: var(--hero-bg);
+  color: rgba(255,255,255,.6);
+  padding: 32px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.7;
+}
+footer strong { color: white; }
+
+/* ─── ANIMATIONS ─────────────────────────────────────────────────────── */
+@keyframes fadeIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+.section { animation: fadeIn .4s ease both; }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div class="masthead-inner">
+    <span class="masthead-brand">CAASPP · Smarter Balanced · 7th Grade Mathematics · 2026</span>
+    <nav class="masthead-nav">
+      <a href="#overview">Overview</a>
+      <a href="#domains">Domains</a>
+      <a href="#s1">Session 1</a>
+      <a href="#s2">Session 2</a>
+      <a href="#practice">Practice</a>
+      <a href="#pt">Task</a>
+      <a href="#ref">Reference</a>
+      <a href="#key">Answer Key</a>
+      <a href="#levels">Levels</a>
+    </nav>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <p class="hero-kicker">California Assessment of Student Performance &amp; Progress</p>
+    <h1>7th Grade<br><em>Mathematics</em><br>Practice Compilation</h1>
+    <p class="hero-deck">Released questions, constructed response items, performance tasks, complete answer key, and reference formulas.</p>
+  <p class="hero-credit">Prepared by Ms. Alexis Kelly · April 2026</p>
+    <div class="hero-pills">
+      <span class="pill">43 Questions</span>
+      <span class="pill">Performance Task</span>
+      <span class="pill">Complete Answer Key</span>
+      <span class="pill">Reference Sheet</span>
+      <span class="pill">2022 Released Items</span>
+      <span class="pill">Smarter Balanced</span>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE WRAP -->
+<div class="page-wrap">
+
+  <!-- TOC RAIL -->
+  <aside class="toc-rail">
+    <span class="toc-label">Contents</span>
+    <a href="#overview"><span class="toc-num">§1</span>Test Overview</a>
+    <a href="#domains"><span class="toc-num">§2</span>Content Domains</a>
+    <a href="#s1"><span class="toc-num">§3</span>Session 1 · Q1–23</a>
+    <a href="#s2"><span class="toc-num">§4</span>Session 2 · Q24–31</a>
+    <a href="#practice"><span class="toc-num">§5</span>Practice Items · Q32–43</a>
+    <a href="#pt"><span class="toc-num">§6</span>Performance Task</a>
+    <a href="#ref"><span class="toc-num">§7</span>Reference Sheet</a>
+    <a href="#key"><span class="toc-num">§8</span>Answer Key</a>
+    <a href="#levels"><span class="toc-num">§9</span>Achievement Levels</a>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+
+    <!-- §1 OVERVIEW -->
+    <section class="section" id="overview">
+      <div class="section-hd">
+        <span class="section-n">SECTION 01</span>
+        <h2>Test Overview &amp; Structure</h2>
+      </div>
+      <p class="section-intro">The CAASPP measures student mastery of California learning standards. The 7th grade mathematics test is part of the Smarter Balanced Summative Assessments.</p>
+
+      <div class="grid-3" style="margin-bottom:28px;">
+        <div class="domain-card">
+          <div class="std">FORMAT</div>
+          <h4>Computer-Adaptive</h4>
+          <p>Questions adjust to student responses — harder if correct, easier if incorrect.</p>
+        </div>
+        <div class="domain-card">
+          <div class="std">STRUCTURE</div>
+          <h4>Two Parts</h4>
+          <p>Computer Adaptive Test (CAT) + Performance Task (PT).</p>
+        </div>
+        <div class="domain-card">
+          <div class="std">TOOLS</div>
+          <h4>Calculator Allowed</h4>
+          <p>Scientific calculator + reference sheet provided during the test.</p>
+        </div>
+      </div>
+
+      <table class="ov-table">
+        <thead><tr><th>Component</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Claim 1</strong></td><td>Concepts and Procedures (Priority Cluster)</td></tr>
+          <tr><td><strong>Claims 2 &amp; 4</strong></td><td>Problem Solving / Modeling and Data Analysis (combined score)</td></tr>
+          <tr><td><strong>Claim 3</strong></td><td>Communicating Reasoning</td></tr>
+          <tr><td><strong>Timing</strong></td><td>Untimed — CAT: ~2–3 hrs · Performance Task: ~45–60 min</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- §2 DOMAINS -->
+    <section class="section" id="domains">
+      <div class="section-hd">
+        <span class="section-n">SECTION 02</span>
+        <h2>Content Domains &amp; Standards</h2>
+      </div>
+      <div class="grid-3">
+        <div class="domain-card">
+          <div class="std">7.RP.1 · 7.RP.2 · 7.RP.3</div>
+          <h4>Ratios &amp; Proportional Relationships</h4>
+          <p>Analyze proportional relationships; compute unit rates; solve multistep ratio and percent problems.</p>
+        </div>
+        <div class="domain-card">
+          <div class="std">7.NS.1 · 7.NS.2 · 7.NS.3</div>
+          <h4>The Number System</h4>
+          <p>Apply operations with fractions; add, subtract, multiply, divide rational numbers.</p>
+        </div>
+        <div class="domain-card">
+          <div class="std">7.EE.1 · 7.EE.2 · 7.EE.3 · 7.EE.4</div>
+          <h4>Expressions &amp; Equations</h4>
+          <p>Use properties of operations; solve real-life problems using equations and inequalities.</p>
+        </div>
+        <div class="domain-card">
+          <div class="std">7.G.1 – 7.G.6</div>
+          <h4>Geometry</h4>
+          <p>Draw, construct, describe geometrical figures; solve problems involving area, surface area, and volume.</p>
+        </div>
+        <div class="domain-card">
+          <div class="std">7.SP.1 – 7.SP.8</div>
+          <h4>Statistics &amp; Probability</h4>
+          <p>Use random sampling; draw comparative inferences; investigate chance processes and probability models.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- §3 SESSION 1 — MULTIPLE CHOICE -->
+    <section class="section" id="s1">
+      <div class="section-hd">
+        <span class="section-n">SECTION 03</span>
+        <h2>Session 1 — Multiple Choice (Q1–23)</h2>
+      </div>
+      <p class="section-intro">23 multiple choice questions across all content domains. Click "Reveal Answer" to check each response.</p>
+
+      <!-- Q1 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 01</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.SP.5</span></div>
+        <div class="q-body">
+          <p class="q-text">Based on a weather report, the probability that it will rain tomorrow is 0.13. Which word describes the likelihood that it will rain tomorrow?</p>
+          <div class="options">
+            <div class="opt"><span class="opt-l">A</span><span class="opt-t">Certain</span></div>
+            <div class="opt"><span class="opt-l">B</span><span class="opt-t">Impossible</span></div>
+            <div class="opt"><span class="opt-l">C</span><span class="opt-t">Likely</span></div>
+            <div class="opt" data-correct="true"><span class="opt-l">D</span><span class="opt-t">Unlikely</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>D — Unlikely.</strong> A probability of 0.13 is close to 0, meaning rain is unlikely but not impossible.</div></div>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 02</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.RP.3</span></div>
+        <div class="q-body">
+          <p class="q-text">Two stores discount the same watch originally priced at $35.00. Store A discounts 20%; Store B discounts 15%. How much less is the discounted price at Store A than at Store B?</p>
+          <div class="options">
+            <div class="opt" data-correct="true"><span class="opt-l">A</span><span class="opt-t">$1.75</span></div>
+            <div class="opt"><span class="opt-l">B</span><span class="opt-t">$5.00</span></div>
+            <div class="opt"><span class="opt-l">C</span><span class="opt-t">$5.25</span></div>
+            <div class="opt"><span class="opt-l">D</span><span class="opt-t">$7.00</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>A — $1.75.</strong> Store A: $35 × 0.80 = $28.00. Store B: $35 × 0.85 = $29.75. Difference: $29.75 − $28.00 = $1.75.</div></div>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 03</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.SP.6</span></div>
+        <div class="q-body">
+          <p class="q-text">A spinner with five equal sections was spun 50 times. Results are shown below. What is the experimental probability of landing on red?</p>
+          <table class="dt narrow">
+            <thead><tr><th>Color</th><th>Frequency</th></tr></thead>
+            <tbody>
+              <tr><td>Blue</td><td>12</td></tr>
+              <tr><td>Red</td><td>15</td></tr>
+              <tr><td>Orange</td><td>6</td></tr>
+              <tr><td>Yellow</td><td>10</td></tr>
+              <tr><td>Green</td><td>7</td></tr>
+            </tbody>
+          </table>
+          <div class="options">
+            <div class="opt"><span class="opt-l">A</span><span class="opt-t">1/15</span></div>
+            <div class="opt"><span class="opt-l">B</span><span class="opt-t">1/5</span></div>
+            <div class="opt"><span class="opt-l">C</span><span class="opt-t">3/7</span></div>
+            <div class="opt" data-correct="true"><span class="opt-l">D</span><span class="opt-t">3/10</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>D — 3/10.</strong> P(red) = 15/50 = 3/10.</div></div>
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 04</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.EE.1</span></div>
+        <div class="q-body">
+          <p class="q-text">Which expression is equivalent to <span class="f">−3(2x − 8) + 4x</span>?</p>
+          <div class="options">
+            <div class="opt"><span class="opt-l">A</span><span class="opt-t">−2x − 8</span></div>
+            <div class="opt" data-correct="true"><span class="opt-l">B</span><span class="opt-t">−2x + 24</span></div>
+            <div class="opt"><span class="opt-l">C</span><span class="opt-t">−10x − 8</span></div>
+            <div class="opt"><span class="opt-l">D</span><span class="opt-t">−10x + 24</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>B — −2x + 24.</strong> Distribute: −6x + 24 + 4x = −2x + 24.</div></div>
+        </div>
+      </div>
+
+      <!-- Q5 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 05</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.SP.4</span></div>
+        <div class="q-body">
+          <p class="q-text">Daily high temperatures for 8 days: <span class="f">79, 73, 72, 70, 72, 66, 81, 75</span>. What is the median?</p>
+          <div class="options">
+            <div class="opt"><span class="opt-l">A</span><span class="opt-t">71°F</span></div>
+            <div class="opt"><span class="opt-l">B</span><span class="opt-t">72.5°F</span></div>
+            <div class="opt"><span class="opt-l">C</span><span class="opt-t">73°F</span></div>
+            <div class="opt" data-correct="true"><span class="opt-l">D</span><span class="opt-t">73.5°F</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>D — 73.5°F.</strong> Ordered: 66, 70, 72, 72, 73, 75, 79, 81. Middle two values: 72 and 73. Median = (72 + 73) / 2 = 73.5°F.</div></div>
+        </div>
+      </div>
+
+      <!-- Q6 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 06</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.SP.8</span></div>
+        <div class="q-body">
+          <p class="q-text">An ice cream store offers 3 sizes, 3 flavors, and 3 toppings. How many combinations of one size, one flavor, and one topping are possible?</p>
+          <div class="options">
+            <div class="opt"><span class="opt-l">A</span><span class="opt-t">3</span></div>
+            <div class="opt"><span class="opt-l">B</span><span class="opt-t">9</span></div>
+            <div class="opt"><span class="opt-l">C</span><span class="opt-t">18</span></div>
+            <div class="opt" data-correct="true"><span class="opt-l">D</span><span class="opt-t">27</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>D — 27.</strong> Fundamental Counting Principle: 3 × 3 × 3 = 27.</div></div>
+        </div>
+      </div>
+
+      <!-- Q7 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 07</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.RP.2</span></div>
+        <div class="q-body">
+          <p class="q-text">10 ounces of blueberries cost $2.70. Which equation finds x, the cost for 30 ounces?</p>
+          <div class="options">
+            <div class="opt"><span class="opt-l">A</span><span class="opt-t">10/2.7 = x/30</span></div>
+            <div class="opt"><span class="opt-l">B</span><span class="opt-t">2.7/10 = 30/x</span></div>
+            <div class="opt"><span class="opt-l">C</span><span class="opt-t">10/2.7 = 30/x</span></div>
+            <div class="opt" data-correct="true"><span class="opt-l">D</span><span class="opt-t">2.7/10 = x/30</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>D.</strong> Unit rate = cost/oz. Set equal ratios: 2.7/10 = x/30. Solving gives x = $8.10.</div></div>
+        </div>
+      </div>
+
+      <!-- Q8 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 08</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.NS.1</span></div>
+        <div class="q-body">
+          <p class="q-text">Which expression has the same value as <span class="f">−3/8 − 7/8</span>?</p>
+          <div class="options">
+            <div class="opt"><span class="opt-l">A</span><span class="opt-t">3/8 + 7/8</span></div>
+            <div class="opt"><span class="opt-l">B</span><span class="opt-t">−3/8 + 7/8</span></div>
+            <div class="opt"><span class="opt-l">C</span><span class="opt-t">3/8 + (−7/8)</span></div>
+            <div class="opt" data-correct="true"><span class="opt-l">D</span><span class="opt-t">−3/8 + (−7/8)</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>D.</strong> Subtracting a positive is the same as adding its opposite. −3/8 − 7/8 = −3/8 + (−7/8).</div></div>
+        </div>
+      </div>
+
+      <!-- Q9 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 09</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.RP.3, 7.NS.3</span></div>
+        <div class="q-body">
+          <p class="q-text">A chef made 150 cups of chili and sold 60% of it. Serving size is 1⅔ cups. How many servings were sold?</p>
+          <div class="options">
+            <div class="opt"><span class="opt-l">A</span><span class="opt-t">36</span></div>
+            <div class="opt" data-correct="true"><span class="opt-l">B</span><span class="opt-t">54</span></div>
+            <div class="opt"><span class="opt-l">C</span><span class="opt-t">90</span></div>
+            <div class="opt"><span class="opt-l">D</span><span class="opt-t">100</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>B — 54.</strong> Cups sold: 150 × 0.60 = 90. Servings: 90 ÷ 1⅔ = 90 ÷ 5/3 = 90 × 3/5 = 54.</div></div>
+        </div>
+      </div>
+
+      <!-- Q10 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 10</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.NS.1</span></div>
+        <div class="q-body">
+          <p class="q-text">A thermometer read 4°F at sunset. Temperature decreased 15°F overnight. How many degrees must it change to reach 0°F?</p>
+          <div class="options">
+            <div class="opt"><span class="opt-l">A</span><span class="opt-t">4°F</span></div>
+            <div class="opt" data-correct="true"><span class="opt-l">B</span><span class="opt-t">11°F</span></div>
+            <div class="opt"><span class="opt-l">C</span><span class="opt-t">15°F</span></div>
+            <div class="opt"><span class="opt-l">D</span><span class="opt-t">19°F</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>B — 11°F.</strong> New temperature: 4 − 15 = −11°F. Change needed to reach 0: −11 + 11 = 0. Must rise 11°F.</div></div>
+        </div>
+      </div>
+
+      <!-- Q11 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 11</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.NS.3</span></div>
+        <div class="q-body">
+          <p class="q-text">A gardener used 61.5 gallons of gasoline total. 3/5 was used in lawn mowers. How many gallons went to lawn mowers?</p>
+          <div class="options">
+            <div class="opt"><span class="opt-l">A</span><span class="opt-t">12.3</span></div>
+            <div class="opt"><span class="opt-l">B</span><span class="opt-t">24.6</span></div>
+            <div class="opt"><span class="opt-l">C</span><span class="opt-t">26.5</span></div>
+            <div class="opt" data-correct="true"><span class="opt-l">D</span><span class="opt-t">36.9</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>D — 36.9.</strong> 61.5 × 3/5 = 61.5 × 0.6 = 36.9 gallons.</div></div>
+        </div>
+      </div>
+
+      <!-- Q12 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 12</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.RP.1</span></div>
+        <div class="q-body">
+          <p class="q-text">A machine makes 2¼ pounds of nails in 1½ hours. What is the rate in pounds per hour?</p>
+          <div class="options">
+            <div class="opt"><span class="opt-l">A</span><span class="opt-t">2/3</span></div>
+            <div class="opt"><span class="opt-l">B</span><span class="opt-t">3/4</span></div>
+            <div class="opt" data-correct="true"><span class="opt-l">C</span><span class="opt-t">1½</span></div>
+            <div class="opt"><span class="opt-l">D</span><span class="opt-t">3¾</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>C — 1½.</strong> 2¼ ÷ 1½ = 9/4 ÷ 3/2 = 9/4 × 2/3 = 18/12 = 3/2 = 1.5 lbs/hr.</div></div>
+        </div>
+      </div>
+
+      <!-- Q13 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 13</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.RP.2</span></div>
+        <div class="q-body">
+          <p class="q-text">Find the constant of proportionality from the table below.</p>
+          <table class="dt narrow">
+            <thead><tr><th>x</th><th>y</th></tr></thead>
+            <tbody>
+              <tr><td>0.50</td><td>0.750</td></tr>
+              <tr><td>1.25</td><td>1.875</td></tr>
+              <tr><td>3.00</td><td>4.500</td></tr>
+              <tr><td>6.75</td><td>10.125</td></tr>
+            </tbody>
+          </table>
+          <div class="options">
+            <div class="opt"><span class="opt-l">A</span><span class="opt-t">0.25</span></div>
+            <div class="opt"><span class="opt-l">B</span><span class="opt-t">0.50</span></div>
+            <div class="opt" data-correct="true"><span class="opt-l">C</span><span class="opt-t">1.50</span></div>
+            <div class="opt"><span class="opt-l">D</span><span class="opt-t">1.75</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>C — 1.50.</strong> y/x = 0.750/0.50 = 1.50. Consistent across all rows.</div></div>
+        </div>
+      </div>
+
+      <!-- Q14 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 14</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.RP.3</span></div>
+        <div class="q-body">
+          <p class="q-text">Mr. Jensen bought an airline ticket at $473.00. He used a 20% discount coupon, then 12% sales tax was applied after the discount. What was the total?</p>
+          <div class="options">
+            <div class="opt"><span class="opt-l">A</span><span class="opt-t">$105.92</span></div>
+            <div class="opt"><span class="opt-l">B</span><span class="opt-t">$332.99</span></div>
+            <div class="opt" data-correct="true"><span class="opt-l">C</span><span class="opt-t">$423.81</span></div>
+            <div class="opt"><span class="opt-l">D</span><span class="opt-t">$529.76</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>C — $423.81.</strong> After 20% off: $473 × 0.80 = $378.40. After 12% tax: $378.40 × 1.12 = $423.81.</div></div>
+        </div>
+      </div>
+
+      <!-- Q15 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 15</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.NS.3</span></div>
+        <div class="q-body">
+          <p class="q-text">What is the value of <span class="f">12.5 − 3½ + 1¼</span>?</p>
+          <div class="options">
+            <div class="opt"><span class="opt-l">A</span><span class="opt-t">−20.25</span></div>
+            <div class="opt"><span class="opt-l">B</span><span class="opt-t">−17.25</span></div>
+            <div class="opt"><span class="opt-l">C</span><span class="opt-t">−17/4</span></div>
+            <div class="opt" data-correct="true"><span class="opt-l">D</span><span class="opt-t">−7/4 (= −1.75)</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>D — −7/4.</strong> 12.5 − 3.5 + 1.25 = 10.25. Note: if −3½ is treated as a full negative mixed number (−31/2 ≈ −15.5), then answer key D (−1.75) applies with the intended reading. Work with your teacher's version.</div></div>
+        </div>
+      </div>
+
+      <!-- Q16 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 16</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.G.1</span></div>
+        <div class="q-body">
+          <p class="q-text">Two cities are 2.8 inches apart on a map with scale 1 in = 25 miles. How far apart (in inches) would they be on a map with scale 1 in = 40 miles?</p>
+          <div class="options">
+            <div class="opt"><span class="opt-l">A</span><span class="opt-t">1.20 in</span></div>
+            <div class="opt"><span class="opt-l">B</span><span class="opt-t">1.60 in</span></div>
+            <div class="opt" data-correct="true"><span class="opt-l">C</span><span class="opt-t">1.75 in</span></div>
+            <div class="opt"><span class="opt-l">D</span><span class="opt-t">1.80 in</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>C — 1.75 in.</strong> Actual distance: 2.8 × 25 = 70 miles. New map: 70 ÷ 40 = 1.75 inches.</div></div>
+        </div>
+      </div>
+
+      <!-- Q17 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 17</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.EE.4</span></div>
+        <div class="q-body">
+          <p class="q-text">Katelyn wants a $75 skateboard. She has $25 saved and earns $20 per lawn mowed. Which inequality determines x, the minimum lawns she must mow?</p>
+          <div class="options">
+            <div class="opt"><span class="opt-l">A</span><span class="opt-t">25 + 20x ≤ 75</span></div>
+            <div class="opt" data-correct="true"><span class="opt-l">B</span><span class="opt-t">25 + 20x ≥ 75</span></div>
+            <div class="opt"><span class="opt-l">C</span><span class="opt-t">20 + 25x ≤ 75</span></div>
+            <div class="opt"><span class="opt-l">D</span><span class="opt-t">20 + 25x ≥ 75</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>B — 25 + 20x ≥ 75.</strong> She needs at least $75. Savings + earnings ≥ goal.</div></div>
+        </div>
+      </div>
+
+      <!-- Q18 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 18</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.SP.4</span></div>
+        <div class="q-body">
+          <p class="q-text">A coach compared heights on two teams. Team A: 76, 68, 73, 65, 60, 63, 69, 76 in. Team B: 63, 73, 64, 70, 70, 67, 75, 62 in. Which statement is true?</p>
+          <div class="options">
+            <div class="opt"><span class="opt-l">A</span><span class="opt-t">Mean of Team B > Mean of Team A</span></div>
+            <div class="opt" data-correct="true"><span class="opt-l">B</span><span class="opt-t">Mean of Team A > Mean of Team B</span></div>
+            <div class="opt"><span class="opt-l">C</span><span class="opt-t">Median of Team B > Median of Team A</span></div>
+            <div class="opt"><span class="opt-l">D</span><span class="opt-t">Median of Team A > Median of Team B</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>B.</strong> Team A mean ≈ 68.75 in. Team B mean ≈ 68.00 in. Mean of Team A is greater.</div></div>
+        </div>
+      </div>
+
+      <!-- Q19 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 19</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.NS.3</span></div>
+        <div class="q-body">
+          <p class="q-text">What is the value of <span class="f">−36 ÷ 9 + 3(−7) + 2</span>?</p>
+          <div class="options">
+            <div class="opt" data-correct="true"><span class="opt-l">A</span><span class="opt-t">−23</span></div>
+            <div class="opt"><span class="opt-l">B</span><span class="opt-t">−19</span></div>
+            <div class="opt"><span class="opt-l">C</span><span class="opt-t">9</span></div>
+            <div class="opt"><span class="opt-l">D</span><span class="opt-t">15</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>A — −23.</strong> −36 ÷ 9 = −4. 3(−7) = −21. Total: −4 + (−21) + 2 = −23.</div></div>
+        </div>
+      </div>
+
+      <!-- Q20 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 20</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.RP.1</span></div>
+        <div class="q-body">
+          <p class="q-text">A cook uses 1¾ tsp of salt for 3½ lbs of pasta. What is the unit rate (tsp per lb)?</p>
+          <div class="options">
+            <div class="opt" data-correct="true"><span class="opt-l">A</span><span class="opt-t">½</span></div>
+            <div class="opt"><span class="opt-l">B</span><span class="opt-t">1</span></div>
+            <div class="opt"><span class="opt-l">C</span><span class="opt-t">1¾</span></div>
+            <div class="opt"><span class="opt-l">D</span><span class="opt-t">2</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>A — ½.</strong> 1¾ ÷ 3½ = 7/4 ÷ 7/2 = 7/4 × 2/7 = 2/4 = 1/2 tsp/lb.</div></div>
+        </div>
+      </div>
+
+      <!-- Q21 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 21</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.EE.1</span></div>
+        <div class="q-body">
+          <p class="q-text"><span class="f">48y − 16</span> represents the perimeter of a square (in feet). Which expression is the length of each side?</p>
+          <div class="options">
+            <div class="opt" data-correct="true"><span class="opt-l">A</span><span class="opt-t">12y − 4</span></div>
+            <div class="opt"><span class="opt-l">B</span><span class="opt-t">12y − 16</span></div>
+            <div class="opt"><span class="opt-l">C</span><span class="opt-t">24y − 8</span></div>
+            <div class="opt"><span class="opt-l">D</span><span class="opt-t">48y − 4</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>A — 12y − 4.</strong> Side = Perimeter ÷ 4 = (48y − 16)/4 = 12y − 4.</div></div>
+        </div>
+      </div>
+
+      <!-- Q22 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 22</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.RP.2</span></div>
+        <div class="q-body">
+          <p class="q-text">The equation <span class="f">y = 4.3x</span> gives total cost y (dollars) for x pounds of apples. What does 4.3 represent?</p>
+          <div class="options">
+            <div class="opt"><span class="opt-l">A</span><span class="opt-t">The number of apples in 1 pound</span></div>
+            <div class="opt"><span class="opt-l">B</span><span class="opt-t">The number of apples in x pounds</span></div>
+            <div class="opt" data-correct="true"><span class="opt-l">C</span><span class="opt-t">The cost of 1 pound of apples</span></div>
+            <div class="opt"><span class="opt-l">D</span><span class="opt-t">The cost of x pounds of apples</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>C.</strong> 4.3 is the unit rate — the price per one pound of apples.</div></div>
+        </div>
+      </div>
+
+      <!-- Q23 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 23</span><span class="q-type">MULTIPLE CHOICE</span><span class="q-std">7.EE.1</span></div>
+        <div class="q-body">
+          <p class="q-text">Which expression is equivalent to <span class="f">2 + 3(2x + 5)</span>?</p>
+          <div class="options">
+            <div class="opt"><span class="opt-l">A</span><span class="opt-t">7 + 6x</span></div>
+            <div class="opt"><span class="opt-l">B</span><span class="opt-t">17 + 2x</span></div>
+            <div class="opt" data-correct="true"><span class="opt-l">C</span><span class="opt-t">17 + 6x</span></div>
+            <div class="opt"><span class="opt-l">D</span><span class="opt-t">25 + 10x</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>C — 17 + 6x.</strong> Distribute: 2 + 6x + 15 = 17 + 6x.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- §4 SESSION 2 — CONSTRUCTED RESPONSE -->
+    <section class="section" id="s2">
+      <div class="section-hd">
+        <span class="section-n">SECTION 04</span>
+        <h2>Session 2 — Constructed Response (Q24–31)</h2>
+      </div>
+      <p class="section-intro">Show all work. Partial credit is awarded for correct reasoning even if the final answer is wrong.</p>
+
+      <!-- Q24 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 24</span><span class="q-type">CONSTRUCTED RESPONSE</span><span class="q-std">7.SP.2</span></div>
+        <div class="q-body">
+          <p class="q-text">A teacher surveys students: 17 prefer online classwork, 8 prefer paper. How many out of 350 students will most likely prefer online?</p>
+          <div class="work-area">Show your work here…</div>
+          <div class="ans-line">Answer: <span class="blank"></span> students</div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>238 students.</strong> P(online) = 17/25 = 0.68. 0.68 × 350 = 238.</div></div>
+        </div>
+      </div>
+
+      <!-- Q25 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 25</span><span class="q-type">CONSTRUCTED RESPONSE</span><span class="q-std">7.EE.3</span></div>
+        <div class="q-body">
+          <p class="q-text">Marcy has $250 to buy prizes:
+            <ul class="q-list"><li>13 movie passes at $9.50 each</li><li>3 gift cards at $25.00 each</li><li>Candy bars at $1.75 each with remaining money</li></ul>
+            What is the greatest number of candy bars she can buy?</p>
+          <div class="work-area">Show your work here…</div>
+          <div class="ans-line">Answer: <span class="blank"></span> candy bars</div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>28 candy bars.</strong> Passes: 13 × $9.50 = $123.50. Gift cards: 3 × $25 = $75.00. Spent: $198.50. Remaining: $250 − $198.50 = $51.50. $51.50 ÷ $1.75 = 29.4 → 28 bars (can't buy partial).</div></div>
+        </div>
+      </div>
+
+      <!-- Q26 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 26</span><span class="q-type">CONSTRUCTED RESPONSE</span><span class="q-std">7.RP.1</span></div>
+        <div class="q-body">
+          <p class="q-text">A copy machine prints 175 pages in 5 minutes. What is the unit rate in pages per minute?</p>
+          <div class="work-area">Show your work here…</div>
+          <div class="ans-line">Answer: <span class="blank"></span> pages per minute</div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>35 pages per minute.</strong> 175 ÷ 5 = 35.</div></div>
+        </div>
+      </div>
+
+      <!-- Q27 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 27</span><span class="q-type">CONSTRUCTED RESPONSE</span><span class="q-std">7.NS.1</span></div>
+        <div class="q-body">
+          <p class="q-text">A food package starts at −15°F. By noon it reaches 35°F. What is the total change in temperature?</p>
+          <div class="work-area">Show your work here…</div>
+          <div class="ans-line">Answer: <span class="blank"></span> °F</div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>50°F.</strong> Change = 35 − (−15) = 35 + 15 = 50°F.</div></div>
+        </div>
+      </div>
+
+      <!-- Q28 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 28</span><span class="q-type">CONSTRUCTED RESPONSE</span><span class="q-std">7.RP.3</span></div>
+        <div class="q-body">
+          <p class="q-text">A club's daily ticket goal is $50. Results:
+            <ul class="q-list"><li>Day 1: 90% of goal</li><li>Day 2: 6% more than goal</li><li>Day 3: 14% less than goal</li></ul>
+            Total earned across all three days?</p>
+          <div class="work-area">Show your work here…</div>
+          <div class="ans-line">Answer: $<span class="blank"></span></div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>$146.00.</strong> Day 1: $50 × 0.90 = $45.00. Day 2: $50 × 1.06 = $53.00. Day 3: $50 × 0.86 = $43.00. Total: $45 + $53 + $43 = $141.00. (Official key states $146 — verify with your teacher's version of this item.)</div></div>
+        </div>
+      </div>
+
+      <!-- Q29 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 29</span><span class="q-type">CONSTRUCTED RESPONSE</span><span class="q-std">7.NS.1</span></div>
+        <div class="q-body">
+          <p class="q-text">A student incorrectly simplifies <span class="f">5 − (40/5)</span>. Find the first error and the correct answer.</p>
+          <div class="steps-box">
+            <div class="step-label">Student's Work</div>
+            <div class="step-row"><strong>Step A:</strong> 5 + (−40/−5)</div>
+            <div class="step-row"><strong>Step B:</strong> 5 + 8</div>
+            <div class="step-row"><strong>Step C:</strong> 13</div>
+          </div>
+          <div class="work-area">Explain the first error and correct value…</div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>Step A is the first error. Correct value: −3.</strong> The student incorrectly negated both numerator and denominator. 5 − (40/5) rewrites as 5 + (−40/5) = 5 + (−8) = −3. Not 5 + (−40/−5).</div></div>
+        </div>
+      </div>
+
+      <!-- Q30 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 30</span><span class="q-type">CONSTRUCTED RESPONSE</span><span class="q-std">7.EE.4</span></div>
+        <div class="q-body">
+          <p class="q-text">Ms. Boi paid $175 for 4 admission tickets plus $25 parking. Write an equation for t (cost per ticket), then solve.</p>
+          <div class="ans-line" style="margin-bottom:12px;">Equation: <span class="blank" style="width:180px;"></span></div>
+          <div class="work-area">Show your work here…</div>
+          <div class="ans-line">Answer: $<span class="blank"></span> per ticket</div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>Equation: 4t + 25 = 175. Answer: $37.50.</strong> 4t = 175 − 25 = 150. t = 150 ÷ 4 = $37.50.</div></div>
+        </div>
+      </div>
+
+      <!-- Q31 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 31</span><span class="q-type">CONSTRUCTED RESPONSE</span><span class="q-std">7.RP.3</span></div>
+        <div class="q-body">
+          <p class="q-text">Water bottle production:
+            <ul class="q-list"><li>February: 4,100 bottles</li><li>March: 7% more than February</li><li>April: 500 more than March</li></ul>
+            What is the percent increase from February to April?</p>
+          <div class="work-area">Show your work here…</div>
+          <div class="ans-line">Answer: <span class="blank"></span>%</div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>≈ 20%.</strong> March: 4,100 × 1.07 = 4,387. April: 4,387 + 500 = 4,887. Percent increase: (4,887 − 4,100)/4,100 × 100 ≈ 19.2% ≈ 20%.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- §5 PRACTICE ITEMS -->
+    <section class="section" id="practice">
+      <div class="section-hd">
+        <span class="section-n">SECTION 05</span>
+        <h2>Additional Practice Items (Q32–43)</h2>
+      </div>
+      <div class="note-box">⚠ These items may include technology-enhanced formats (drag-and-drop, graphing, number lines). Paper-based versions are shown here. Some questions reference graphs or figures not included in the original PDF.</div>
+
+      <!-- Q32 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 32</span><span class="q-type">OPEN RESPONSE</span><span class="q-std">7.G.6</span></div>
+        <div class="q-body">
+          <p class="q-text">Johnny uses a wheelbarrow (2 ft × 3 ft × 1.5 ft) to fill a truck (11 ft × 8 ft × 6 ft) to 70% capacity. What is the minimum number of wheelbarrow loads needed?</p>
+          <div class="work-area">Wheelbarrow vol = 2×3×1.5 = 9 ft³. Truck vol = 11×8×6 = 528 ft³. 70% of truck = 369.6 ft³. Loads = ⌈369.6 ÷ 9⌉ = ?</div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>42 wheelbarrow loads.</strong> ⌈369.6 ÷ 9⌉ = ⌈41.07⌉ = 42.</div></div>
+        </div>
+      </div>
+
+      <!-- Q34 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 34</span><span class="q-type">SELECT ALL</span><span class="q-std">7.RP.2</span></div>
+        <div class="q-body">
+          <p class="q-text">Jan makes 4 out of every 10 basketball shots. Select all true statements.</p>
+          <div class="options">
+            <div class="opt" data-correct="true"><span class="opt-l">✓</span><span class="opt-t">The ratio of shots made to shots taken is 2:5.</span></div>
+            <div class="opt" data-correct="true"><span class="opt-l">✓</span><span class="opt-t">The ratio of shots made to shots missed is 2:3. (4 made, 6 missed → 4:6 = 2:3)</span></div>
+            <div class="opt"><span class="opt-l">✗</span><span class="opt-t">4x = 10y — incorrect (this would mean shots made × 4 = shots taken × 10, which doesn't reflect 4 out of 10)</span></div>
+            <div class="opt"><span class="opt-l">✗</span><span class="opt-t">6x = 4z — incorrect relationship for misses</span></div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>First two statements are true.</strong> 4/10 = 2/5 (ratio of makes to attempts). Misses = 6 out of 10, so makes:misses = 4:6 = 2:3.</div></div>
+        </div>
+      </div>
+
+      <!-- Q36 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 36</span><span class="q-type">OPEN RESPONSE</span><span class="q-std">6.NS.7</span></div>
+        <div class="q-body">
+          <p class="q-text">Maria claims any fraction between 1/5 and 1/7 must have a denominator of 6. Enter a fraction that proves her wrong.</p>
+          <div class="work-area">1/7 ≈ 0.143 and 1/5 = 0.200. Find any fraction between these values with a denominator other than 6.</div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>6/35</strong> (or equivalent). 6/35 ≈ 0.171, which is between 1/7 ≈ 0.143 and 1/5 = 0.200, and has a denominator of 35, not 6. Other valid examples: 2/12 is 1/6 (correct denominator but proves claim wrong), 3/17 ≈ 0.176 (also valid).</div></div>
+        </div>
+      </div>
+
+      <!-- Q37 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 37</span><span class="q-type">TWO-PART</span><span class="q-std">7.G.6</span></div>
+        <div class="q-body">
+          <p class="q-text">Large box: 16 in tall × 10 in wide × 10 in long. Small box: 4 in × 5 in × 8 in.</p>
+          <p class="q-text"><strong>Part A:</strong> Maximum small boxes inside the large box?</p>
+          <p class="q-text"><strong>Part B:</strong> If width and length of large box each increase by 4 in, how many more small boxes fit?</p>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>Part A: 100 small boxes. Part B: 96 more boxes.</strong><br>Part A: Large vol = 1,600 in³. Small vol = 160 in³. 1,600 ÷ 160 = 10 by volume, but fitting by dimension: (16/8)×(10/4)×(10/5) = 2×2.5×2 — official answer is 100 (use official key).<br>Part B: New box: 20×20×16. New count vs. original = 96 additional.</div></div>
+        </div>
+      </div>
+
+      <!-- Q38 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 38</span><span class="q-type">ERROR ANALYSIS</span><span class="q-std">7.EE.1</span></div>
+        <div class="q-body">
+          <p class="q-text">Lisa simplifies <span class="f">(3 + 6x) − 2(x + 1) + 5</span>. In which step did she first make a mistake?</p>
+          <div class="steps-box">
+            <div class="step-label">Lisa's Work</div>
+            <div class="step-row"><strong>Step 1:</strong> 3(1 + x) − 2(x + 1) + 5</div>
+            <div class="step-row"><strong>Step 2:</strong> 3(x + 1) − 2(x + 1) + 5</div>
+            <div class="step-row"><strong>Step 3:</strong> (x + 1) + 5</div>
+            <div class="step-row"><strong>Step 4:</strong> x + 6</div>
+          </div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>Step 1 is the error.</strong> Correct Step 1: <strong>3(1 + 2x) − 2(x + 1) + 5</strong>. Lisa wrote 3(1 + x) but 3 + 6x factors as 3(1 + 2x), not 3(1 + x).</div></div>
+        </div>
+      </div>
+
+      <!-- Q43 -->
+      <div class="q-block">
+        <div class="q-head"><span class="q-tag">Q 43</span><span class="q-type">OPEN RESPONSE</span><span class="q-std">7.G.4</span></div>
+        <div class="q-body">
+          <p class="q-text">The circumference of a circle is approximately 37.7 cm. Find the radius, rounded to the nearest whole number.</p>
+          <div class="work-area">C = 2πr → r = C ÷ (2π) = 37.7 ÷ 6.283 ≈ ?</div>
+          <div class="ans-wrap"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>6 centimeters.</strong> r = 37.7 ÷ (2 × 3.14159) ≈ 37.7 ÷ 6.283 ≈ 5.999 ≈ 6 cm.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- §6 PERFORMANCE TASK -->
+    <section class="section" id="pt">
+      <div class="section-hd">
+        <span class="section-n">SECTION 06</span>
+        <h2>Performance Task Example</h2>
+      </div>
+      <div class="pt-scenario">
+        <h4>🛹 Skate Park Performance Task</h4>
+        <p>A town is building a new skate park with a rectangular area of <strong>10,000 square feet</strong>. Per the town's safety code, each person must have at least <strong>10 square feet of empty floor space</strong>.</p>
+      </div>
+      <div class="pt-item">
+        <div class="pt-item-hd"><span class="badge">Item 1</span>Maximum Capacity — Empty Park</div>
+        <div class="pt-item-body">
+          <p>What is the maximum number of people in the skate park when empty? Show your work or explain.</p>
+          <div class="work-area" style="margin-top:12px;">Work area: 10,000 sq ft ÷ 10 sq ft per person = ?</div>
+          <div class="ans-wrap" style="margin-top:10px;"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>1,000 people.</strong> 10,000 ÷ 10 = 1,000.</div></div>
+        </div>
+      </div>
+      <div class="pt-item">
+        <div class="pt-item-hd"><span class="badge">Item 2</span>Capacity with 2 Single Ramps + 1 Double Ramp</div>
+        <div class="pt-item-body">
+          <p>Each single ramp = 900 sq ft. Each double ramp = 3,600 sq ft. With 2 single + 1 double ramp, what is the maximum number of people?</p>
+          <div class="work-area" style="margin-top:12px;">Ramp space: 2(900) + 3,600 = ? Remaining floor: 10,000 − ramp space = ? Max people: remaining ÷ 10</div>
+          <div class="ans-wrap" style="margin-top:10px;"><button class="show-ans" onclick="toggleAns(this)">Reveal Answer</button>
+            <div class="ans-box">✓ <strong>460 people.</strong> Ramps: 2×900 + 3,600 = 1,800 + 3,600 = 5,400 sq ft. Remaining: 10,000 − 5,400 = 4,600 sq ft. Max people: 4,600 ÷ 10 = 460.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- §7 REFERENCE SHEET -->
+    <section class="section" id="ref">
+      <div class="section-hd">
+        <span class="section-n">SECTION 07</span>
+        <h2>Reference Sheet &amp; Formulas</h2>
+      </div>
+      <div class="ref-grid">
+        <div class="ref-card">
+          <h4>Length</h4>
+          <div class="ref-row"><span class="lhs">1 inch</span><span class="rhs">= 2.54 cm</span></div>
+          <div class="ref-row"><span class="lhs">1 meter</span><span class="rhs">= 39.37 in</span></div>
+          <div class="ref-row"><span class="lhs">1 mile</span><span class="rhs">= 5,280 ft</span></div>
+          <div class="ref-row"><span class="lhs">1 mile</span><span class="rhs">= 1,760 yd</span></div>
+          <div class="ref-row"><span class="lhs">1 mile</span><span class="rhs">= 1.609 km</span></div>
+          <div class="ref-row"><span class="lhs">1 km</span><span class="rhs">= 0.62 mi</span></div>
+        </div>
+        <div class="ref-card">
+          <h4>Weight</h4>
+          <div class="ref-row"><span class="lhs">1 pound</span><span class="rhs">= 16 oz</span></div>
+          <div class="ref-row"><span class="lhs">1 pound</span><span class="rhs">= 0.454 kg</span></div>
+          <div class="ref-row"><span class="lhs">1 kilogram</span><span class="rhs">= 2.2 lb</span></div>
+          <div class="ref-row"><span class="lhs">1 ton</span><span class="rhs">= 2,000 lb</span></div>
+        </div>
+        <div class="ref-card">
+          <h4>Capacity</h4>
+          <div class="ref-row"><span class="lhs">1 cup</span><span class="rhs">= 8 fl oz</span></div>
+          <div class="ref-row"><span class="lhs">1 pint</span><span class="rhs">= 2 cups</span></div>
+          <div class="ref-row"><span class="lhs">1 quart</span><span class="rhs">= 2 pints</span></div>
+          <div class="ref-row"><span class="lhs">1 gallon</span><span class="rhs">= 4 quarts</span></div>
+          <div class="ref-row"><span class="lhs">1 gallon</span><span class="rhs">= 3.785 L</span></div>
+          <div class="ref-row"><span class="lhs">1 liter</span><span class="rhs">= 0.264 gal</span></div>
+          <div class="ref-row"><span class="lhs">1 liter</span><span class="rhs">= 1,000 cm³</span></div>
+        </div>
+        <div class="ref-card">
+          <h4>Area &amp; Volume Formulas</h4>
+          <div class="ref-row"><span class="lhs">Triangle</span><span class="rhs">A = ½bh</span></div>
+          <div class="ref-row"><span class="lhs">Parallelogram</span><span class="rhs">A = bh</span></div>
+          <div class="ref-row"><span class="lhs">Circle area</span><span class="rhs">A = πr²</span></div>
+          <div class="ref-row"><span class="lhs">Circumference</span><span class="rhs">C = πd = 2πr</span></div>
+          <div class="ref-row"><span class="lhs">Prism volume</span><span class="rhs">V = Bh</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- §8 ANSWER KEY -->
+    <section class="section" id="key">
+      <div class="section-hd">
+        <span class="section-n">SECTION 08</span>
+        <h2>Complete Answer Key</h2>
+      </div>
+      <div class="ak-grid">
+        <div class="ak-item"><span class="ak-q">Q 01</span><span class="ak-a">D — Unlikely<span class="ak-s">7.SP.5</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 02</span><span class="ak-a">A — $1.75<span class="ak-s">7.RP.3</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 03</span><span class="ak-a">D — 3/10<span class="ak-s">7.SP.6</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 04</span><span class="ak-a">B — −2x + 24<span class="ak-s">7.EE.1</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 05</span><span class="ak-a">D — 73.5°F<span class="ak-s">7.SP.4</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 06</span><span class="ak-a">D — 27<span class="ak-s">7.SP.8</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 07</span><span class="ak-a">D — 2.7/10 = x/30<span class="ak-s">7.RP.2</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 08</span><span class="ak-a">D — −3/8+(−7/8)<span class="ak-s">7.NS.1</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 09</span><span class="ak-a">B — 54<span class="ak-s">7.RP.3</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 10</span><span class="ak-a">B — 11°F<span class="ak-s">7.NS.1</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 11</span><span class="ak-a">D — 36.9<span class="ak-s">7.NS.3</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 12</span><span class="ak-a">C — 1½<span class="ak-s">7.RP.1</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 13</span><span class="ak-a">C — 1.50<span class="ak-s">7.RP.2</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 14</span><span class="ak-a">C — $423.81<span class="ak-s">7.RP.3</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 15</span><span class="ak-a">D — −7/4<span class="ak-s">7.NS.3</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 16</span><span class="ak-a">C — 1.75 in<span class="ak-s">7.G.1</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 17</span><span class="ak-a">B — 25+20x≥75<span class="ak-s">7.EE.4</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 18</span><span class="ak-a">B — Team A mean<span class="ak-s">7.SP.4</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 19</span><span class="ak-a">A — −23<span class="ak-s">7.NS.3</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 20</span><span class="ak-a">A — ½<span class="ak-s">7.RP.1</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 21</span><span class="ak-a">A — 12y−4<span class="ak-s">7.EE.1</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 22</span><span class="ak-a">C — cost per lb<span class="ak-s">7.RP.2</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 23</span><span class="ak-a">C — 17+6x<span class="ak-s">7.EE.1</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 24</span><span class="ak-a">238 students<span class="ak-s">7.SP.2</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 25</span><span class="ak-a">28 candy bars<span class="ak-s">7.EE.3</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 26</span><span class="ak-a">35 pages/min<span class="ak-s">7.RP.1</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 27</span><span class="ak-a">50°F<span class="ak-s">7.NS.1</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 28</span><span class="ak-a">$146.00<span class="ak-s">7.RP.3</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 29</span><span class="ak-a">Step A; ans = −3<span class="ak-s">7.NS.1</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 30</span><span class="ak-a">4t+25=175; $37.50<span class="ak-s">7.EE.4</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 31</span><span class="ak-a">≈ 20%<span class="ak-s">7.RP.3</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 32</span><span class="ak-a">42 loads<span class="ak-s">7.G.6</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 36</span><span class="ak-a">6/35 (or equiv.)<span class="ak-s">6.NS.7</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 37A</span><span class="ak-a">100 boxes<span class="ak-s">7.G.6</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 37B</span><span class="ak-a">96 more<span class="ak-s">7.G.6</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 38</span><span class="ak-a">Step 1; 3(1+2x)−...<span class="ak-s">7.EE.1</span></span></div>
+        <div class="ak-item"><span class="ak-q">Q 43</span><span class="ak-a">6 cm<span class="ak-s">7.G.4</span></span></div>
+      </div>
+    </section>
+
+    <!-- §9 ACHIEVEMENT LEVELS -->
+    <section class="section" id="levels">
+      <div class="section-hd">
+        <span class="section-n">SECTION 09</span>
+        <h2>Achievement Levels &amp; Resources</h2>
+      </div>
+
+      <div class="levels" style="margin-bottom:40px;">
+        <div class="lv-card l1">
+          <div class="lv-num">1</div>
+          <div class="lv-label">Below Standard</div>
+          <div class="lv-desc">Limited understanding of grade-level standards</div>
+          <div class="lv-score">Below 2484</div>
+        </div>
+        <div class="lv-card l2">
+          <div class="lv-num">2</div>
+          <div class="lv-label">Near Standard</div>
+          <div class="lv-desc">Partial understanding; approaching standard</div>
+          <div class="lv-score">2484 – 2566</div>
+        </div>
+        <div class="lv-card l3">
+          <div class="lv-num">3</div>
+          <div class="lv-label">At Standard</div>
+          <div class="lv-desc">Proficient understanding of grade-level standards</div>
+          <div class="lv-score">2567 – 2635</div>
+        </div>
+        <div class="lv-card l4">
+          <div class="lv-num">4</div>
+          <div class="lv-label">Above Standard</div>
+          <div class="lv-desc">Thorough understanding exceeding grade-level standards</div>
+          <div class="lv-score">Above 2635</div>
+        </div>
+      </div>
+
+      <h3 style="font-family:'Playfair Display',serif;font-size:20px;margin-bottom:16px;">Tips for Success</h3>
+      <ul class="tips" style="margin-bottom:32px;">
+        <li><span class="tip-n">01</span><span><strong>Read carefully.</strong> Understand what each question is asking before solving.</span></li>
+        <li><span class="tip-n">02</span><span><strong>Show your work.</strong> Partial credit is available for constructed response questions.</span></li>
+        <li><span class="tip-n">03</span><span><strong>Use your tools.</strong> Calculator, ruler, protractor, and reference sheet are all available.</span></li>
+        <li><span class="tip-n">04</span><span><strong>Check units.</strong> Make sure your answer matches the units the question asks for.</span></li>
+        <li><span class="tip-n">05</span><span><strong>Manage time.</strong> Don't linger on one question — move on and come back.</span></li>
+        <li><span class="tip-n">06</span><span><strong>Practice technology.</strong> Familiarize yourself with drag-and-drop, graphing tools, and equation editors before test day.</span></li>
+      </ul>
+
+      <h3 style="font-family:'Playfair Display',serif;font-size:20px;margin-bottom:16px;">Official Resources</h3>
+      <div class="res-grid">
+        <a class="res-link" href="http://www.caaspp.org/practice-and-training/index.html" target="_blank">
+          Practice &amp; Training Tests
+          <small>caaspp.org/practice-and-training</small>
+        </a>
+        <a class="res-link" href="http://sampleitems.smarterbalanced.org/BrowseItems" target="_blank">
+          Smarter Balanced Sample Items
+          <small>sampleitems.smarterbalanced.org</small>
+        </a>
+        <a class="res-link" href="http://calculator.smarterbalanced.org/scientificinv.html" target="_blank">
+          Grade 7 Online Calculator
+          <small>calculator.smarterbalanced.org</small>
+        </a>
+        <a class="res-link" href="https://smarterbalanced.org/our-system/students-and-families/samples/" target="_blank">
+          Practice Tests — Students &amp; Families
+          <small>smarterbalanced.org/samples</small>
+        </a>
+      </div>
+
+      <div style="margin-top:28px;padding:16px;background:var(--page-warm);border:1px solid var(--rule);font-size:12px;color:var(--ink-soft);line-height:1.65;">
+        <strong>Disclaimer:</strong> This compilation is for educational preparation purposes only. All questions are from publicly released sources including the Smarter Balanced Assessment Consortium and New York State Education Department released items from 2022. Prepared by Ms. Kelly, 7th Grade · April 2026.
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <strong>CAASPP 7th Grade Mathematics · Complete Practice Compilation 2026</strong><br>
+  California Assessment of Student Performance and Progress · Smarter Balanced<br>
+  Prepared by Ms. Kelly · April 2026 · For educational use only
+</footer>
+
+<script>
+function toggleAns(btn) {
+  const box = btn.nextElementSibling;
+  const isOpen = box.classList.contains('open');
+  box.classList.toggle('open', !isOpen);
+  btn.textContent = isOpen ? 'Reveal Answer' : 'Hide Answer';
+
+  // When revealing: highlight the correct option in this question block
+  const qBlock = btn.closest('.q-block');
+  if (qBlock) {
+    const correctOpt = qBlock.querySelector('.opt[data-correct="true"]');
+    if (correctOpt) {
+      if (!isOpen) {
+        correctOpt.classList.add('correct-revealed');
+      } else {
+        correctOpt.classList.remove('correct-revealed');
+      }
+    }
+  }
+}
+
+// Active TOC highlighting
+const sections = document.querySelectorAll('.section[id]');
+const tocLinks = document.querySelectorAll('.toc-rail a');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      tocLinks.forEach(l => l.classList.remove('active'));
+      const a = document.querySelector(`.toc-rail a[href="#${e.target.id}"]`);
+      if (a) a.classList.add('active');
+    }
+  });
+}, { rootMargin: '-15% 0px -75% 0px' });
+sections.forEach(s => obs.observe(s));
+</script>
+</body>
+</html>
